@@ -1,0 +1,14 @@
+{
+  "name" : "nodester-nodetime-test",
+  "description" : "A test for weirdness on the Nodester platform with node-time",
+  "version" : "1.0.0",
+  "author" : "Clint Andrew Hall <clint@clintandrewhall.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/clintandrewhall/nodester-nodetime-test"
+  },
+  "bin" : "./server.js",
+  "dependencies" : {
+    "time" : "~0.1"
+  }
+}
