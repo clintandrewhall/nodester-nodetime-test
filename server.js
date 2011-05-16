@@ -1,9 +1,17 @@
+if(!process.env.TZDIR) {
+    process.env.TZDIR = __dirname + "/lib/zoneinfo";
+}
+
 var sys = require("sys"),
   http = require('http'),
   time = require("time");
 
 function test() {
   var d = new time.Date(), result = "";
+  result += "\n\n";
+  result += "Timezone file location:\n";
+  result += "=======================\n\n";
+  result += process.env.TZDIR;
   result += "\n\n";
   result += "Creating a date:\n";
   result += "================\n\n";
