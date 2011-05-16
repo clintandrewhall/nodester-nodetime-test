@@ -1,4 +1,6 @@
-process.env.TZDIR = __dirname + "lib/zoneinfo";
+if(!process.env.TZDIR) {
+    process.env.TZDIR = __dirname + "lib/zoneinfo";
+}
 
 var sys = require("sys"),
   http = require('http'),
